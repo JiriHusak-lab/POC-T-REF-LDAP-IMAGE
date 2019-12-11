@@ -49,4 +49,13 @@ cn: reader
 objectclass: organizationalRole
 objectclass: top
 
-
+# Entry 8: cn=janko,dc=example,dc=org - password: ruser123
+dn: cn=ruser,dc=example,dc=org
+cn: ruser
+givenname: Rest
+mail: ruser@example.org
+objectclass: inetOrgPerson
+objectclass: top
+sn: User
+uid: ruser
+userpassword: {MD5}M4eWDLHyYaZClzfJq3eppA==
