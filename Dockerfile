@@ -1,4 +1,4 @@
-FROM osixia/openldap:latest
+FROM osixia/openldap
 
 RUN mkdir /container/service/slapd/assets/config/bootstrap/ldif/backup.d
 
