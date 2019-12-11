@@ -9,7 +9,7 @@
 
 version: 1
 
-# Entry 3: cn=ruserX,dc=example,dc=org - password: ruser123
+# Entry 3: cn=ruser,dc=example,dc=org - password: ruser123
 dn: cn=ruser,dc=example,dc=org
 cn: ruser
 givenname: Rest
@@ -20,13 +20,13 @@ sn: User
 uid: ruser
 userpassword: {MD5}M4eWDLHyYaZClzfJq3eppA==
 
-# Entry 4: cn=StargazerX,cn=ruser,dc=example,dc=org
+# Entry 4: cn=Stargazer,cn=ruser,dc=example,dc=org
 dn: cn=Stargazer,cn=ruser,dc=example,dc=org
 cn: Stargazer
 objectclass: organizationalRole
 objectclass: top
 
-# Entry 5: cn=tuserX,dc=example,dc=org - password: tuser123
+# Entry 5: cn=tuser,dc=example,dc=org - password: tuser123
 dn: cn=tuser,dc=example,dc=org
 cn: tuser
 givenname: Test
@@ -37,36 +37,15 @@ sn: User
 uid: tuser
 userpassword: {MD5}xp1Fgk6atGWbKvMxVwx+YA==
 
-# Entry 6: cn=administratorX,cn=tuser,dc=example,dc=org
+# Entry 6: cn=administrator,cn=tuser,dc=example,dc=org
 dn: cn=administrator,cn=tuser,dc=example,dc=org
 cn: administrator
 objectclass: organizationalRole
 objectclass: top
 
-# Entry 7: cn=readerX,cn=tuser,dc=example,dc=org
+# Entry 7: cn=reader,cn=tuser,dc=example,dc=org
 dn: cn=reader,cn=ruser,dc=example,dc=org
 cn: reader
 objectclass: organizationalRole
 objectclass: top
 
-# Entry 8: cn=janko,dc=example,dc=org - password: ruser123
-dn: cn=ruser,dc=example,dc=org
-cn: ruser
-givenname: Rest
-mail: ruser@example.org
-objectclass: inetOrgPerson
-objectclass: top
-sn: User
-uid: ruser
-userpassword: {MD5}M4eWDLHyYaZClzfJq3eppA==
-
-# Entry 9: cn=hrasko,dc=example,dc=org - password: ruser123
-dn: cn=ruser,dc=example,dc=org
-cn: ruser
-givenname: Rest
-mail: ruser@example.org
-objectclass: inetOrgPerson
-objectclass: top
-sn: User
-uid: ruser
-userpassword: {MD5}M4eWDLHyYaZClzfJq3eppA==
